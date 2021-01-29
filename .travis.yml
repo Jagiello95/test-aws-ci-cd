@@ -18,19 +18,7 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-2-441340877932"
   bucket_path: "test-aws-ci-cd"
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  on:
-    branch: master
-
-    deploy:
-  provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "docker-react"
-  env: "DockerReact-env"
-  bucket_name: "elasticbeanstalk-us-east-2-380258614279"
-  bucker_path: "docker-react"
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
+  secret_access_key: 
     secure: "$AWS_SECRET_KEY"
+  on:
+    branch: master
