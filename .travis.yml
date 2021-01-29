@@ -8,7 +8,7 @@ before_install:
   - docker build -t jagiello95/test-aws-ci-cd -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true jagiello95/test-aws-ci-cd npm run test
+  - docker run -e CI=true jagiello95/test-aws-ci-cd npm run test -- --coverage 
 
 deploy:
   provider: elasticbeanstalk
