@@ -1,8 +1,8 @@
+language: generic
 sudo: required
-language: generic 
+
 services:
   - docker
-# install 
 
 before_install:
   - docker build -t jagiello95/test-aws-ci-cd -f Dockerfile.dev .
