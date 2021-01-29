@@ -1,0 +1,11 @@
+sudo: required
+language: generic 
+services:
+  - docker
+# install 
+
+before_install:
+  - docker build -t jagiello95/test-aws-ci-cd -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true jagiello95/test-aws-ci-cd npm run test

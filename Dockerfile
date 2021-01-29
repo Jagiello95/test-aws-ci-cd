@@ -1,3 +1,5 @@
+    # docker file to build an application and then serve it from nginx
+    
     FROM node:alpine
     WORKDIR '/app'
     COPY package.json .
@@ -11,3 +13,6 @@
     # multi step process
     # copy from another phase : folder to copy from : folder to copy to
     # image consists only of content in copy method
+
+    #BUILD: docker build .
+    #Execute docker run -p 8081:80 <docker-image>
