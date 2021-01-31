@@ -14,7 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "test-aws-ci-cd"
-  env: "Testawscicd-env"
+  env: "testawscicd-env"
   bucket_name: "elasticbeanstalk-us-east-2-441340877932"
   bucket_path: "test-aws-ci-cd"
   access_key_id: $AWS_ACCESS_KEY
